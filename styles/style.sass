@@ -8,6 +8,15 @@
 body
     background-color: #343e5e
     color: #fff
+    font-family: Arial, Helvetica, sans-serif
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 80vh
+    overflow: hidden
+
+h1
+    margin: 20px 0 0    
 
 .container
     &-figure
@@ -15,4 +24,40 @@ body
         stroke: #fff    
         stroke-width: 4px
         stroke-linecap: round
-        
+    &-game
+        padding: 20px 30px
+        position: relative    
+        margin: auto
+        height: 350px
+        width: 450px
+    &-wrong-letters
+        position: absolute
+        top: 20px
+        right: 20px    
+        display: flex
+        flex-direction: column
+        text-align: right
+        p
+            margin: 0 0 5px
+        span
+            font-size: 24px    
+
+.figure-part
+    display: none   
+
+.word
+    display: flex
+    position: absolute
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)       
+
+.letter
+    border-bottom: 3px solid #2980b9     
+    display: inline-flex
+    font-size: 30px
+    align-items: center
+    justify-content: center
+    margin: 0 3px
+    height: 50px
+    width: 20px
